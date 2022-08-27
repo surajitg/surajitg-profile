@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+      - run: npm run build
       - run: npm run export
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
